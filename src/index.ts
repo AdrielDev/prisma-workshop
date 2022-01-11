@@ -86,13 +86,6 @@ const resolvers = {
         }
       })
     },
-    posts: (_parent, args: { id: number }, context: Context) => {
-      return context.prisma.user.findUnique({
-        where: {
-          id: 
-        }
-      })
-    },
   },
   Mutation: {
     //Cria um objeto do tipo User
